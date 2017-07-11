@@ -9,13 +9,13 @@
     "stage-1"
   ],
   "plugins": [
-    "transform-decorators-legacy"
-  ],
+    "transform-decorators-legacy",
+  ]<%if (locals.unit) {%>,
   "env": {
     "test": {
       "plugins": [
         "istanbul"
       ]
     }
-  }
+  }<% } %>
 }

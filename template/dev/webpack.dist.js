@@ -59,19 +59,7 @@ module.exports = {
       { test: /\.(jpg|gif|png|svg|ico)$/, loader: 'file-loader?name=images/[name].[ext]' },
       {
         test: /\.scss$/,
-        exclude: path.resolve(__dirname, '../src/css'),
-        use: extractCSS.extract({
-          use: [
-            'css-loader?minimize&modules&&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
-            'postcss-loader',
-            'sass-loader',
-          ],
-          publicPath: '../',
-        }),
-      },
-      {
-        test: /\.scss$/,
-        include: path.resolve(__dirname, '../src/css'),
+        include: path.resolve(__dirname, '../src/'),
         use: extractCSS.extract({
           use: ['css-loader?minimize', 'postcss-loader', 'sass-loader'],
           publicPath: '../',

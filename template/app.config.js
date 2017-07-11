@@ -18,7 +18,7 @@ const config = {
       links 需要自动插入到<head>标签中的<link>标签，默认为空 (可手动修改模板实现同样效果)
       scripts 需要自动插入到<body>标签底部的<script>标签，默认为空 (可手动修改模板实现同样效果)
     */
-    { name: 'index', title: 'React App', entry: './src/index' },
+    { name: 'index', title: 'ES6 Template', entry: './src/index' },
     // {
     //   name: 'single_page',
     //   title: 'User',
